@@ -8,7 +8,8 @@ body {
 
 
 header {
-    background-color: #3498db;
+/*    background-color:#FFD580;*/
+    background-color: #F88017;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -16,42 +17,84 @@ header {
 
 .logo img {
     max-width: 100%;
-    height: auto;
+    height: 80px;
+    width: 100px;
     float: left;
+    margin-left: 20px;
+    border-radius: 30px;
+
 }
 
-.navbar{
-    background-color: lightcyan;
+h1{
+    margin: 0;
+}
+
+nav {
+    background-color: #FFD580;
+    padding: 10px;
 }
 
 nav ul {
-    list-style: none;
-    margin-top: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
     display: inline;
-    margin-right: 20px;
-    float: left;
+    margin-right: 10px;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #333;
     font-weight: bold;
-    font-size: 18px;
 }
-
 nav a:hover {
-    color: white;
-}
-main {
-    padding: 20px;
+    color: #F88017;
 }
 
 footer {
-    background-color: #2c3e50;
+    background-color: #F88017;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.gallery a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    
+    border: 1px solid #ddd; /* Add a border effect to images */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    transition: transform 0.3s ease-in-out; /* Add a smooth hover effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Increase the size of the image on hover */
+}
+
+/* Add more styling as needed */
+
